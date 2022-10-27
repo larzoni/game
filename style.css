@@ -14,7 +14,7 @@ body {
 .content {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -30,7 +30,7 @@ body {
   background: black;
   color: white;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
   border-radius: 100%;
   display: grid;
   justify-content: center;
