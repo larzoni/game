@@ -37,13 +37,19 @@ body {
   align-items: center;
 }
 
+.animate__animated {
+}
+
+.animate__wobble {
+}
+
 #answer {
   font-size: 1.5rem;
 }
 
 .shakebutton {
   display: inline-block;
-  padding: 0.5em 3em;
+  padding: 0.8em 3em;
   border: 0.16em solid #ffffff;
   background-color: rgba(0, 255, 255, 0.337);
   margin: 1em 0.3em 0.3em 0;
@@ -61,7 +67,7 @@ body {
 .shakebutton:hover {
   color: #ffffff;
   border-color: #dddddd78;
-  padding: 0.5em 2em;
+  padding: 0.8em 2em;
 }
 .shakebutton:active {
   background-color: #dc88c8;
