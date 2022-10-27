@@ -2,34 +2,74 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
-  background-color: salmon;
+  background: linear-gradient(90deg, rgb(196, 121, 121), blue);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.error-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: blueviolet;
-  padding: 2rem;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s;
+.content h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem;
 }
 
-.visible {
-  visibility: visible;
-  opacity: 1;
+#theBall {
+  width: 350px;
+  height: 350px;
+  background: black;
+  color: white;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer {
+  font-size: 1.5rem;
+}
+
+.shakebutton {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  background-color: rgba(0, 255, 255, 0.337);
+  margin: 1em 0.3em 0.3em 0;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.shakebutton:hover {
+  color: #ffffff;
+  border-color: #dddddd78;
+  padding: 0.5em 2em;
+}
+.shakebutton:active {
+  background-color: #dc88c8;
+  border-color: #fcfcfc;
+}
+@media all and (max-width: 30em) {
+  shakebutton {
+    display: block;
+    margin: 0.4em auto;
+  }
 }
